@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Set the absolute base background to black */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Highlighted text colors */
+::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
