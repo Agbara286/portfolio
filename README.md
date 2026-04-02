@@ -8,7 +8,7 @@ A premium, modern portfolio designed for full-stack developers and software engi
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animated-purple)
 
 ## 🚀 Live Demo
-[Insert Your Live Vercel/Netlify Link Here]
+[https://elixer-dev.vercel.app/]
 
 ## ✨ Features
 
@@ -25,12 +25,3 @@ A premium, modern portfolio designed for full-stack developers and software engi
 - **Animation:** Framer Motion
 - **Form Handling:** EmailJS
 - **Icons:** FontAwesome & React Icons
-
-## 💻 Getting Started
-
-To run this project locally, follow these steps:
-
-### 1. Clone the repository
-```bash
-git clone [https://github.com/Agbara286/your-repo-name.git](https://github.com/Agbara286/your-repo-name.git)
-cd your-repo-name
