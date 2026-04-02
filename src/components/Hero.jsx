@@ -99,7 +99,7 @@ export const Hero = () => {
         </motion.div>
 
         {/* Right Column: Stack & Featured Project */}
-     {/* Right Column: Stack & Featured Project */}
+    
         <motion.div
           className="flex-1 relative w-full max-w-lg flex flex-col gap-6"
           initial={{ opacity: 0, x: 30 }}
@@ -123,13 +123,13 @@ export const Hero = () => {
                 { icon: <FaReact />, name: "React" },
                 { icon: <SiNextdotjs />, name: "Next.js" },
                 { icon: <SiTailwindcss />, name: "Tailwind" },
-                { icon: <SiFramer />, name: "Framer Motion" }, // Added Framer
+                { icon: <SiFramer />, name: "Framer Motion" },
                 { icon: <SiNodedotjs />, name: "Node.js" },
                 { icon: <SiGo />, name: "Go" },
                 { icon: <FaJava />, name: "Java" },
                 { icon: <SiMongodb />, name: "MongoDB" },
                 { icon: <SiSupabase />, name: "Supabase" },
-                { icon: <SiPostgresql />, name: "PostgreSQL" }, // Added Postgres
+                { icon: <SiPostgresql />, name: "PostgreSQL" }, 
                 { icon: <FaHtml5 />, name: "HTML" },
                 { icon: <FaCss3Alt />, name: "CSS" },
               ].map((tech, index) => (

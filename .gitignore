@@ -24,7 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment Variables (Keep these here just to be safe!)
+# Environment Variables
 .env
 .env.*
 !.env.example

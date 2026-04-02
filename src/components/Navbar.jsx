@@ -13,7 +13,7 @@ export const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
 
-  // Detect scroll to add glassmorphism effect when moving down the page
+  // it Detects scroll to add glassmorphism effect when moving down the page
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
