@@ -1,4 +1,4 @@
-# Hi there, I'm Elisha 👋
+# Hi there, I'm EliXer 👋
 
 **Full-Stack Software Engineer | Next.js & Go Architect | Computer Engineering Student**
 
