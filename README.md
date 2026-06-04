@@ -26,11 +26,11 @@ I build high-performance web applications and AI-driven tools. I specialize in b
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ### 📂 Featured Projects
-*   **[Elixer Dev Portfolio](https://elixer-dev.vercel.app/)** - High-performance, pitch-black developer portfolio featuring a Bento Box architecture, built with React, Tailwind v4, and Framer Motion.
+*  
 *   **[Wiskai](https://wis-kai.app)** - AI-driven spaced-repetition study platform built to optimize student learning.
 * 
 ### ⚡ Beyond the Code
-*   ⚽ Massive fan of analyzing European football metrics (Serie A & Premier League).
+*   ⚽ Massive fan of analyzing European football metrics.
 *   📐 Authored a comprehensive technical proposal for a solar-powered water supply system for the LAUTECH metropolis.
 
 ### 📫 Let's Connect
