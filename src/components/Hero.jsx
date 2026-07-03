@@ -122,16 +122,14 @@ export const Hero = () => {
                 { icon: <SiTypescript />, name: "TypeScript" },
                 { icon: <FaReact />, name: "React" },
                 { icon: <SiNextdotjs />, name: "Next.js" },
-                { icon: <SiTailwindcss />, name: "Tailwind" },
-                { icon: <SiFramer />, name: "Framer Motion" },
+             
                 { icon: <SiNodedotjs />, name: "Node.js" },
                 { icon: <SiGo />, name: "Go" },
                 { icon: <FaJava />, name: "Java" },
                 { icon: <SiMongodb />, name: "MongoDB" },
                 { icon: <SiSupabase />, name: "Supabase" },
                 { icon: <SiPostgresql />, name: "PostgreSQL" }, 
-                { icon: <FaHtml5 />, name: "HTML" },
-                { icon: <FaCss3Alt />, name: "CSS" },
+                
               ].map((tech, index) => (
                 <motion.div
                   key={index}

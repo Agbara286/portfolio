@@ -20,15 +20,7 @@ const projectsData = [
     live: "https://blog-website-opal-one.vercel.app/",
     image: "/project/Annotation 2025-09-08 082518.png",
   },
-  {
-    id: 3,
-    title: "Pizza Website",
-    description: "A modern and responsive React.js website showcasing reusable components, clean UI, and a functional contact form built with ❤️.",
-    tech: ["React", "JavaScript", "EmailJS", "CSS"],
-    github: "https://github.com/Agbara286?tab=repositories",
-    live: "https://pizzahub-website.vercel.app/",
-    image: "/project/home.PNG",
-  },
+ 
    {
     id: 4,
     title: "StudyFeed (wiskAi)",
