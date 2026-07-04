@@ -89,7 +89,7 @@ export const Hero = () => {
             <motion.a href="https://github.com/Agbara286" target="_blank" className="hover:text-white transition-colors">
               <FaGithub />
             </motion.a>
-            <motion.a href="www.linkedin.com/in/abejide-agbaraolorunpo" target="_blank" className="hover:text-white transition-colors">
+            <motion.a href="https://linkedin.com/in/abejide-agbaraolorunpo" target="_blank" className="hover:text-white transition-colors">
               <FaLinkedin />
             </motion.a>
             <motion.a href="https://x.com/nothing_0142" target="_blank" className="hover:text-white transition-colors">
