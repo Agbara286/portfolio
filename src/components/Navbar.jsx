@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom"; 
 
-
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/#about" },
@@ -16,19 +15,34 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation(); 
 
+ 
+  useEffect(() => {
+    if (location.pathname === "/") {
+      if (location.hash) {
+        const id = location.hash.substring(1);
+      
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          if (element) element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+  }, [location.pathname, location.hash]);
+
+ 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
 
-  
     if (location.pathname === "/blog") {
       setActive("Blog");
       return; 
     }
 
-    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -45,7 +59,6 @@ export const Navbar = () => {
       { rootMargin: "-40% 0px -60% 0px" }
     );
 
-    
     if (location.pathname === "/") {
       navLinks.forEach((link) => {
         if (link.href.startsWith("/#")) {
@@ -65,6 +78,27 @@ export const Navbar = () => {
     };
   }, [location.pathname]); 
 
+ 
+  const handleNavClick = (e, link) => {
+    setActive(link.name);
+
+    if (location.pathname === "/") {
+      if (link.href.startsWith("/#")) {
+        e.preventDefault(); 
+        const id = link.href.substring(2);
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          window.history.pushState(null, "", link.href);
+        }
+      } else if (link.href === "/") {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.history.pushState(null, "", "/");
+      }
+    }
+  };
+
   return (
     <motion.nav
       initial={{ y: -100, opacity: 0, x: "-50%" }}
@@ -80,7 +114,7 @@ export const Navbar = () => {
         <Link 
           key={link.name}
           to={link.href} 
-          onClick={() => setActive(link.name)}
+          onClick={(e) => handleNavClick(e, link)} // <-- Trigger custom logic
           className="relative px-5 py-2 text-sm font-medium transition-colors"
         >
           <span
