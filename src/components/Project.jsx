@@ -11,18 +11,10 @@ const projectsData = [
     live: "https://image-search-engine-kohl.vercel.app/",
     image: "/project/Annotation 2025-09-07 200544.png", 
   },
-  {
-    id: 2,
-    title: "Blog Website",
-    description: "A simple and interactive Blog Application featuring real-time database management. Users can create, read, and manage blog posts seamlessly.",
-    tech: ["React", "JavaScript", "Firebase"],
-    github: "https://github.com/Agbara286?tab=repositories",
-    live: "https://blog-website-opal-one.vercel.app/",
-    image: "/project/Annotation 2025-09-08 082518.png",
-  },
+
  
    {
-    id: 4,
+    id: 2,
     title: "StudyFeed (wiskAi)",
     description: "A full-stack EdTech SaaS that converts PDF lecture materials into smart flashcards using Gemini AI. Engineered a decoupled Golang backend to handle custom Paystack webhook billing, an automated 3-deck paywall, and secure Row-Level Security database updates via Supabase.",
     tech: ["Next.js", "Golang", "Supabase", "Paystack API", "Gemini AI", "Railway"],
@@ -31,15 +23,34 @@ const projectsData = [
     image: "/project/study.png",
   },
    {
-    id: 5,
+    id: 3,
     title: "Shoe Store Website",
     description: "A modern, responsive e-commerce storefront designed for footwear. Features intuitive product navigation, dynamic cart management, and a sleek user interface optimized for a seamless shopping experience.",
     tech: ["React", "Tailwind CSS", "JavaScript"], 
     github: "https://github.com/Agbara286?tab=repositories",
     live: "https://shoe-store-one-ruby.vercel.app/",
     image: "/project/shoestore.png",
-  }
+  },
+ {
+    id: 4,
+    title: "Saint CMS",
+    description: "A radically simple, zero-config headless CMS featuring a high-performance Go backend engine and an embedded SQLite database. Equipped with a pixel-perfect Next.js admin studio dashboard designed for fast-paced e-commerce product catalogs and client projects.",
+    tech: ["Go", "Next.js", "Tailwind CSS", "SQLite", "Supabase"], 
+    github: "https://github.com/Agbara286/saint-cms",
+    live: "https://saint-docs-8vna5k0i6-elishas-projects-da83bb78.vercel.app/quick-start", 
+    image: "/project/saintcms.png",
+  },
+  {
+    id: 5,
+    title: "Saint CMS Documentation",
+    description: "The official technical documentation site for Saint CMS. Built using the Nextra framework to provide developers and clients with clear, scannable guides on quick-start installations, schema construction, and API deployments.",
+    tech: ["Next.js", "Nextra", "Markdown", "Tailwind CSS"], 
+    github: "https://github.com/Agbara286/saint-docs",
+    live: "https://saint-docs-8vna5k0i6-elishas-projects-da83bb78.vercel.app/",
+    image: "/project/saintdocs.png",
+  },
 ];
+
 
 // Animations
 const fadeUpVariant = {

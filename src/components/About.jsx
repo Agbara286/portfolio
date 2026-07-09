@@ -56,40 +56,14 @@ export const About = () => {
                 I am absolutely obsessed with crafting pixel-perfect, intuitive UIs, but I don't stop at the surface. I want to build digital products that actually solve real-world problems. While I appreciate a sleek frontend, my favorite playground right now is the backend—specifically writing high-performance, concurrent logic in <span className="text-white font-semibold">Go</span>.
               </p>
               <p>
-                When my IDE is closed, I'm usually diving deep into full-length music albums or nerding out over football (Manchester all the way). My current mission? Just keep building.
+                When my IDE is closed, I'm usually diving deep into full-length music albums or nerding out over football. My current mission? Just keep building.
               </p>
             </motion.div>
           </motion.div>
 
-          {/* Right Column: Bento Box Quick Facts */}
-          <motion.div 
-            className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            {/* Box 1 */}
-            <motion.div variants={fadeUpVariant} className="bg-zinc-950 border border-zinc-800/80 p-6 rounded-3xl hover:border-zinc-600 transition-colors">
-              <FiCpu className="text-3xl text-zinc-500 mb-4" />
-              <h3 className="text-white font-bold mb-2">Computer Engineering</h3>
-              <p className="text-sm text-zinc-500">Bringing hardware-level logic to software architecture.</p>
-            </motion.div>
-
-            {/* Box 2 */}
-            <motion.div variants={fadeUpVariant} className="bg-zinc-950 border border-zinc-800/80 p-6 rounded-3xl hover:border-zinc-600 transition-colors sm:-translate-y-4">
-              <FiLayout className="text-3xl text-zinc-500 mb-4" />
-              <h3 className="text-white font-bold mb-2">UI Obsessed</h3>
-              <p className="text-sm text-zinc-500">Pixel-perfect precision and seamless user experiences.</p>
-            </motion.div>
-
-            {/* Box 3 */}
-            <motion.div variants={fadeUpVariant} className="bg-zinc-950 border border-zinc-800/80 p-6 rounded-3xl hover:border-zinc-600 transition-colors">
-              <FiTarget className="text-3xl text-zinc-500 mb-4" />
-              <h3 className="text-white font-bold mb-2">The Mission</h3>
-              <p className="text-sm text-zinc-500">Keep building. Keep learning. Solve real problems.</p>
-            </motion.div>
-        </motion.div>
+          
+          
+    
 
         </div>
       </div>

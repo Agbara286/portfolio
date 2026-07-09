@@ -125,7 +125,7 @@ export const Hero = () => {
              
                 { icon: <SiNodedotjs />, name: "Node.js" },
                 { icon: <SiGo />, name: "Go" },
-                { icon: <FaJava />, name: "Java" },
+               
                 { icon: <SiMongodb />, name: "MongoDB" },
                 { icon: <SiSupabase />, name: "Supabase" },
                 { icon: <SiPostgresql />, name: "PostgreSQL" }, 
