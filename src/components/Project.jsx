@@ -49,6 +49,16 @@ const projectsData = [
     live: "https://saint-docs-8vna5k0i6-elishas-projects-da83bb78.vercel.app/",
     image: "/project/saintdocs.png",
   },
+  {
+    id: 6,
+    title: "The Football Journal",
+    description: "A premium digital publication for European football tactics and FPL metrics. Powered by my custom headless engine (Saint CMS) with databases managed via Aiven. The backend infrastructure is deployed on Render, automated email distribution is handled by SendByte, and system health is monitored via Uptime Robot.",
+    tech: ["Next.js", "Saint CMS", "SendByte", "Aiven", "Render", "Uptime Robot", "Golang","clerk"],
+    github: "https://github.com/Agbara286/football-journal",
+    live: "https://footballjournal.online",
+    image: "/project/footballjournal.png",
+  },
+
 ];
 
 
