@@ -50,7 +50,13 @@ function relativeTime(iso: string) {
   }
   return "just now";
 }
-
+function renderBoldText(text: string) {
+ 
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return parts.map((part, index) => 
+    index % 2 === 1 ? <strong key={index} className="text-white font-semibold">{part}</strong> : part
+  );
+}
 interface PortfolioBlogProps {
   apiUrl?: string;
   apiKey?: string;
@@ -94,10 +100,18 @@ export default function PortfolioBlog({ apiUrl, apiKey }: PortfolioBlogProps) {
           const rawArray = Array.isArray(data) ? data : (data.data || data.content || []);
           
           if (rawArray.length > 0) {
-            const sanitizedPosts = rawArray.map((post: any) => ({
-              ...post,
-              id: String(post.id),
-            }));
+          const sanitizedPosts = rawArray.map((post: any) => ({
+  ...post,
+  id: String(post.id || Math.random()),
+  
+  title: post.title || post.projectName || "Untitled Project",
+  created_at: post.created_at || new Date().toISOString(),
+  
+  
+  content: post.fullDescription || post.full_description || post.fulldescription || 
+           post.shortDescription || post.short_description || post.shortdescription || 
+           "No description provided.",
+}));
             setPosts(sanitizedPosts);
             setUsingDemo(false);
           } else {
@@ -204,11 +218,11 @@ export default function PortfolioBlog({ apiUrl, apiKey }: PortfolioBlogProps) {
                 </h2>
               </header>
               
-              <div className="space-y-6 text-zinc-300 text-base leading-relaxed">
-                {(active.content || "").split("\n").filter(Boolean).map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
-              </div>
+            <div className="space-y-6 text-zinc-300 text-base leading-relaxed">
+  {(active.content || "").split("\n").filter(Boolean).map((para, i) => (
+    <p key={i}>{renderBoldText(para)}</p>
+  ))}
+</div>
             </article>
           )}
         </div>
